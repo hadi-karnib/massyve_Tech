@@ -22,10 +22,6 @@ const connectDB = async () => {
   }
 };
 
-app.get("/", (req, res) => {
-  res.send("Hello, Express and MongoDB!");
-});
-
 app.listen(PORT, async () => {
   await connectDB();
   console.log(`Server is running on port ${PORT}`);
