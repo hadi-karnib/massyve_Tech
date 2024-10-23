@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import axios from "axios";
 
 const baseUrl = process.env.NEXT_PUBLIC_NODE_API_URL;
