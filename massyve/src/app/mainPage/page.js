@@ -54,7 +54,12 @@ export default function MainPage() {
   if (!user) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500">
-        <p className="text-white text-xl">Loading...</p>
+        <Player
+          autoplay
+          loop
+          src="/loading.json"
+          style={{ height: "300px", width: "300px" }}
+        ></Player>
       </div>
     );
   }
